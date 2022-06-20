@@ -1,7 +1,11 @@
 Folder containing data and code for selction layer adapted for timeseries.
 # ARCHIVOS:
 
-data:
+Ambos archivos están ordenados de tal manera que la fila 1 es la más antigua, ergo la medida de la fila 1 de la variable X1 puede causar la medida de la fila 15 de la variable Y1.
+
+mixed/data:
+    - Las variables X1,..., X8 son señales reales normalizadas.
+    - Las variables Y1,..., Y6 son variables creadas a partir de funciones no lineales.
     - REDUNDANCIAS:
         X3 = forrester(X1)
         X5 = cheng_sandu(X1, X2)
@@ -24,5 +28,12 @@ data:
         Mean lag of target X6 is 4.97   T11
         Mean lag of target X7 is 2.51   Pot
         Mean lag of target X8 is 0.49   T12
+        
+        
+sim2/TLD_r0_d2nu_s2_p10_T15:
+    - Conjunto de datos con 10 variables causales sampleadas de distribuciones normales y uniformes de media y variaza aleatorias.
+    - No hay redundancias en las variables
+    - Lag máximo es 15.
+    - Combinación lineal.
         
     
